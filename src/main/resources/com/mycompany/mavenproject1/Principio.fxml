@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane stylesheets="@dao.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controlador.ControladorPrincipio">
+   <children>
+      <AnchorPane prefHeight="76.0" prefWidth="467.0" styleClass="fondo_principio" stylesheets="@dao.css">
+         <children>
+            <HBox layoutY="50.0" prefHeight="22.0" prefWidth="467.0" stylesheets="@dao.css">
+               <children>
+                  <Button id="Pantalla_Clientes" mnemonicParsing="false" onAction="#Cambiar_Pantalla" prefHeight="25.0" prefWidth="236.0" styleClass="botones_principio_clientes" stylesheets="@dao.css" text="Clientes" />
+                  <Button id="Pantalla_Articulos" mnemonicParsing="false" onAction="#Cambiar_Pantalla" prefHeight="25.0" prefWidth="231.0" styleClass="botones_principio_articulos" stylesheets="@dao.css" text="Artículos" />
+               </children>
+            </HBox>
+            <Label alignment="CENTER" layoutX="48.0" layoutY="-1.0" prefHeight="50.0" prefWidth="395.0" styleClass="label_texto_principio" text="Formularios" />
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
