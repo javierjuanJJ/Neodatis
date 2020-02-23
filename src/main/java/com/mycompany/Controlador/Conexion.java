@@ -21,17 +21,10 @@ public class Conexion {
 
     }
 
-    public static void cerrar() {
+    public static void cerrar() throws ODBRuntimeException ,Exception {
 
         if (odb != null) {
-            try {
-                odb.close();
-
-            } catch (ODBRuntimeException ex) {
-                System.err.println("Error " + ex.getMessage());
-            } catch (Exception ex) {
-                System.err.println("Error " + ex.getMessage());
-            }
+           odb.close();
         }
 
     }

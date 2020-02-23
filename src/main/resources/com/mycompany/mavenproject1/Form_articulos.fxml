@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
@@ -13,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<AnchorPane stylesheets="@dao.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controlador.ControladorFormularioArticulos">
+<AnchorPane stylesheets="@dao.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.Controlador.ControladorFormularioArticulos">
    <children>
       <AnchorPane prefHeight="336.0" prefWidth="639.0" styleClass="fondo_articulos" stylesheets="@dao.css">
          <children>
@@ -51,7 +48,7 @@
                   <Button fx:id="boton_buscar_por_id_articulos" mnemonicParsing="false" onAction="#Buscar_por_id" styleClass="botones_articulos" stylesheets="@dao.css" text="Buscar por ID" />
                </children>
             </HBox>
-            <HBox layoutX="97.0" layoutY="291.0" prefHeight="37.0" prefWidth="472.0" stylesheets="@dao.css">
+            <HBox layoutX="167.0" layoutY="296.0" prefHeight="37.0" prefWidth="472.0" stylesheets="@dao.css">
                <children>
                   <Button fx:id="boton_anyadir_atras_articulos" mnemonicParsing="false" onAction="#insertar_informacion_clientes" styleClass="botones_articulos" stylesheets="@dao.css" text="Añadir" />
                   <Button fx:id="boton_actualizar_articulos" mnemonicParsing="false" onAction="#actualizar_informacion" styleClass="botones_articulos" stylesheets="@dao.css" text="Actualizar" />
@@ -64,6 +61,7 @@
                </children>
             </HBox>
             <Label fx:id="error_articulos" layoutX="6.0" layoutY="314.0" prefHeight="16.0" prefWidth="630.0" />
+            <Label fx:id="label_informacion" layoutX="-1.0" layoutY="288.0" prefHeight="47.0" prefWidth="164.0" text="Label" />
          </children>
       </AnchorPane>
    </children>

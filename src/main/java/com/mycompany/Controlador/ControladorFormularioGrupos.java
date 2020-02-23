@@ -1,8 +1,10 @@
 package com.mycompany.Controlador;
 
 
+import dao.ArticulosDAO;
 import com.mycompany.Modelo.Grupos;
 import com.mycompany.mavenproject1.Main;
+import dao.GrupoDAO;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -21,7 +23,7 @@ import javafx.scene.layout.Priority;
 
 public class ControladorFormularioGrupos {
 
-    private static ArticulosDAO controladorgrupos;
+    private static GrupoDAO controladorgrupos;
     static final String GRUPO = "Grupo";
 
     @FXML
@@ -33,7 +35,7 @@ public class ControladorFormularioGrupos {
     public void initialize() {
 
         try {
-            controladorgrupos = new ArticulosDAO();
+            controladorgrupos = new GrupoDAO();
         } catch (Exception e) {
             (new Main()).mensajeExcepcion(e, e.getMessage());
             Platform.exit();
